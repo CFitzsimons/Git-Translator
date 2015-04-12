@@ -1,0 +1,346 @@
+commit d069d10912b6e87751c22666219fc4a4292144fa
+Author: Alexander Rutz <ar@animaux.de>
+Date:   Thu Mar 12 14:31:39 2015 +0100
+
+    This works!
+
+commit 476f1368cabe622d7971c8089a66f4c2bd88b8ad
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Feb 18 12:23:24 2015 +0100
+
+    head^1 working
+
+commit 85ef9ff4736dd981351a63fba52adf60ff1aace9
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Fri Jan 9 11:11:38 2015 +0100
+
+    Another commit working!
+
+commit a909c34ca1156747be209e08cdc0e6712630d788
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:31:38 2015 +0100
+
+    E-Mail-Versand
+
+commit 4e9257dcf97ee4dc33160604b5d00ab953aa92fe
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:30:04 2015 +0100
+
+    Nachtrag
+
+commit 14ec1c3a301af10778369d8a6b9730c18aa8959c
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:24:40 2015 +0100
+
+    Vereinheitlichungen
+
+commit e76dc9b78f42e7f9b056d37fbeb119373c3c4d9c
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:11:53 2015 +0100
+
+    Weitere Übersetzungen
+
+commit 4388d190b7e514b49ea9cbf511ff76f682fa0864
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:30:42 2015 +0100
+
+    Version 2.2.0 Beta 1
+
+commit 0d514ebc857e3455844ff4e070daeddece6bbf42
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:28:02 2015 +0100
+
+    Fehlerhaftes Datumsformat korrgieren
+    
+    Fixes #6
+
+commit cda10cd903ff286eda31684ea035e51c61720420
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:27:17 2015 +0100
+
+    Fehlende Übersetzungen für 2.6
+    
+    Bitte an @animaux zur Durchsicht und Korrektur.
+
+commit e7629609e342c98131b948f941e0b6cf59fb1f0f
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:03:48 2015 +0100
+
+    Erste Anpassungen für 2.6
+
+commit 516534b38410f78bc06c41f7f4567a5622ba8612
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Jun 16 12:43:02 2014 +0200
+
+    Correct version number format
+
+commit 6f351c6f67150c7a57405a287b2b81bca57a8c65
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Mar 18 11:22:54 2014 +0100
+
+    Version 2.1
+
+commit 382939775b2cb84e03668ef916ae846821614266
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Apr 3 07:39:37 2013 +0300
+
+    Version 2.0
+
+commit 89da01f611ee00aff6d7dddd5e9b13cf018abcc1
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Apr 3 07:38:28 2013 +0300
+
+    Übersetzungsdatum aktualisieren
+
+commit 9aa44ae971a5d2f424700788e6c444fe6b5e4e2d
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Apr 3 07:37:53 2013 +0300
+
+    Transliterationen aktualisieren
+    
+    Nummer- und Gradangaben, Und-Verbindungen
+
+commit f7d067c1ab0b2506935bc1e2dfccbfa54e74ea42
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Tue May 29 16:58:39 2012 +0300
+
+    Datenquellenpaginierung
+
+commit 92b4aa0faf6eb7ef82d449ac467de1abb889848a
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Fri May 25 16:32:03 2012 +0200
+
+    Weitere Korrekturen
+
+commit e7563eb46da8ca428a0105a0ad75bb3d2d4f17ac
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Fri May 25 16:10:11 2012 +0200
+
+    Fehlenden Buchstaben ergänzt
+    
+    das „T“ in Pflichtfeld
+
+commit 174dbd6529e31f0570742faab8f5595b6fa13549
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Fri May 25 16:07:15 2012 +0200
+
+    Fehlerkorrektur
+    
+    - Rechtschreibung (fehlende Buchstaben, Buchstabendreher)
+    - Formulierungen (Vereinfachungen)
+
+commit 0766fbef739f6fdda12fa485919f42f632a24968
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Thu May 24 09:49:19 2012 +0200
+
+    Einige Korrekturen
+    
+    - Rechtschreibung und Formulierungen angepasst
+    - Übersetzungsfehler behoben
+
+commit f43aa29cd2da205936c23faaef958d6839d9cc39
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Fri May 18 20:46:31 2012 +0200
+
+    German translation 2.0 beta 2
+
+commit e1c455b47c7fdb70d6c6972ee5102493040d1364
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Fri May 18 19:20:48 2012 +0200
+
+    Weitere Übersetzungen
+
+commit 0b3d5aa2da71d1c0fd5906ce785f00d4dee733a6
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sat May 12 08:52:04 2012 +0200
+
+    Reexport
+
+commit ff60aaa5f701857fea4317bcb34a55706925e771
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 14:17:53 2012 +0200
+
+    Updated release notes
+
+commit 98479e817b263ef8403f8cb4d5728de267b02ac6
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 14:16:14 2012 +0200
+
+    Correct repo name
+
+commit 466fc4225eaa79722d09cd9b49920fc6300779f5
+Merge: 6b4c5b8 086f0f0
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 13:43:14 2012 +0200
+
+    Merge branch 'refs/heads/2.3'
+
+commit 086f0f007a416109e8a8171cbaef9fa99bc984e7
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 13:43:01 2012 +0200
+
+    Language: German 2.0 Beta
+
+commit 6b4c5b881f60bb50033e484f0a91bbf060ba22a9
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Apr 9 08:35:10 2012 +0200
+
+    Revert "Aktualisierung für Symphony 2.3 mit Ergänzungen von @jensscherbl"
+    
+    This reverts commit 9077f2d44436a8d2531c1bc741056d5662e63150.
+
+commit 9077f2d44436a8d2531c1bc741056d5662e63150
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Apr 9 08:32:41 2012 +0200
+
+    Aktualisierung für Symphony 2.3 mit Ergänzungen von @jensscherbl
+
+commit 2b700f162fde5b77508c4f2c554391e52783e7f7
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Dec 13 16:34:29 2011 +0100
+
+    Version 1.3.1
+
+commit d5aa8199e05ccf99adfdcd7fc70f868d7c28bc4c
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Mar 27 13:11:53 2011 +0200
+
+    Neue Übersetzungen (insbesondere für relative Zeitangaben)
+
+commit 32150070d924e4c212ae1371ab5c1d1343238382
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Mar 27 10:57:06 2011 +0200
+
+    Version 1.3, Ergänzung fehlender Datums- und Zeitangaben
+
+commit 9053d4e07e3429886b53c7b47ce74e883b255214
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Wed Feb 16 10:37:17 2011 +0100
+
+    Version 1.2
+
+commit 66ea96f3b9b7a6abf707b71cea23b8e4bbc5cd40
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Wed Feb 16 10:35:14 2011 +0100
+
+    Lokalisierung von Datums- und Zeitangaben
+
+commit c1c10697642048062eb6943aee6243816b21b6d4
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 15 20:22:33 2011 +0100
+
+    Fehlende Übersetzungen ergänzt - dies muss alles noch mal Korrektur gelesen werden
+
+commit 2060c2019bc454b8a5b9505f43d06d31f0184df1
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 1 19:40:36 2011 +0100
+
+    Zwischenstand
+
+commit 81374cffc9b630208845956fcffe65867d3d17a6
+Author: Johanna Hörrmann <johannadietrich@johannas-imac.(none)>
+Date:   Mon Jun 21 18:23:09 2010 +0800
+
+    Changed wrong link
+
+commit da284ccd78ef9440f10fbb68b2b3d617118c00ff
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:16:26 2010 +0200
+
+    Jetze aber! Manno!
+
+commit 9b3c8e48ecd2c276eb45ba8dc9fd77b6c3436044
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:13:16 2010 +0200
+
+    richitg shcreibne
+
+commit 2de96326b364665000d0b04c7a358633e4b1f9cb
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:11:34 2010 +0200
+
+    Kommas, keine Semikolons
+
+commit ba3dffbad1da7e8874c614fac2f8980b990ed009
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:10:02 2010 +0200
+
+    Fehlende Übersetzungen für systemunabhängige Datenquellen
+
+commit dc102528fd617669f5275c99f7476e7cdcf3010e
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:06:52 2010 +0200
+
+    Fehlende Übersetzung ergänzt
+
+commit 7d817b16bccb47b58801e3107480186cb0cfa26f
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 15 12:44:24 2010 +0100
+
+    falsch gesetztes Leerzeichen
+
+commit 00d33252f2b9a0352ed2c930059a1a1716a919c2
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 9 17:53:18 2010 +0100
+
+    Aktualisierung der Sprachdatei und Ergänzung fehlender Übersetzungen
+
+commit c07c80fb9130c63046eebf5f74029a328c665a73
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 2 07:54:22 2010 +0100
+
+    Update readme to reflect changes
+
+commit fdffb2d16a4a6a6f0e6f40e3771d5a1115b6edf1
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 2 07:06:28 2010 +0100
+
+    Rename entire repository as suggested by the Symphony team
+
+commit 6bb5f109a0b814a61d8e1e7c2e8579dc025e55d0
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 2 07:00:31 2010 +0100
+
+    Use correct class name
+
+commit 7704f1becccea8877adf8426c70d13934980d751
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:25:52 2010 +0100
+
+    add licence file
+
+commit eb83cf6d62e06b3ea832f850fc15402995894199
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:24:17 2010 +0100
+
+    Add changes and corrections by kaiuwe
+
+commit 8e27cf1b4720155dcda7791e93e706b271f8f4c3
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:23:38 2010 +0100
+
+    small typo
+
+commit 2bb80c509078897fd4b583c88ebb717de25f6594
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:20:51 2010 +0100
+
+    remove unneeded files
+
+commit c28febaf230e4d54929cee7e4ff3f1d65abb8b39
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:15:22 2010 +0100
+
+    Structural changes to match Symphony 2.0.7 requirements
+
+commit b2470462ae93912b72baf1e894ab655f43958d2c
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Dec 10 17:19:52 2009 +0100
+
+    readme formatting
+
+commit 8bc37c96c6262a9dc4723502710a7b41e3b2faf0
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Dec 10 17:18:17 2009 +0100
+
+    Initial import
