@@ -135,10 +135,10 @@ class GitShell extends Shell{
     public GitShell(File targetRepo){
         this.target = targetRepo;
     }
-	private class MyTimerTask extends TimerTask  {
+	private class BooleanTimer extends TimerTask  {
 		public boolean isValid = true;
 
-		public MyTimerTask() {}
+		public BooleanTimer() {}
 
 		@Override
 	    public void run() {
@@ -158,7 +158,7 @@ class GitShell extends Shell{
 	    }
 	}
     public boolean isValidGitRepository(){
-		MyTimerTask ft = new MyTimerTask();
+		BooleanTimer ft = new BooleanTimer();
 		//This is to stop the bufferedreader from looping infinitly
 		(new Timer()).schedule(ft, 200);
 		try{
