@@ -5,18 +5,46 @@ import org.google.translate.api.v2.core.model.Detection;
 import org.google.translate.api.v2.core.model.Language;
 import org.google.translate.api.v2.core.model.Translation;
 import org.google.translate.api.v2.core.Translator;
+
+/*
+* TODO:
+*	- Maybe remove the race condition inside GitShell
+*/
 public class EntryPoint {
-    public static void main(String[] args) throws Exception {
-        GitShell shell = new GitShell(new File("C:/Users/Colin/Documents/GitHub/lang_german"));
+
+    public static void main(String[] args){
+		if(args.length != 1){
+			System.err.println("Please supply one argument, the parent git folder.");
+			System.err.println("Form: java -cp [externals] program [C:/Some/Git/Folder]");
+			System.exit(1);//Arguments exit
+		}
+		File gitParent = new File(args[0]);
+		if(!gitParent.exists()){
+			System.err.println("Error finding folder: Please ensure that the path is correct.");
+			System.exit(1);
+		}
+		GitShell shell = new GitShell(gitParent);
+		if(!shell.isValidGitRepository()){
+			System.err.println("Not valid git folder: Please ensure the folder is correct");
+			System.exit(1);
+		}
         File logFile = new File("logs.txt");
         shell.generateLogs(logFile);
-        ArrayList<LogEntry> logs = Reader.getLogsFromFile(logFile);
-        GoogleTranslationService late = new GoogleTranslationService();
-        late.translateLogs(logs);
-        for(LogEntry e : logs){
-            System.out.println(e);
-        }
-        shell.updateLogs(logs);
+		try{
+			ArrayList<LogEntry> logs = Reader.getLogsFromFile(logFile);
+			GoogleTranslationService late = new GoogleTranslationService();
+			System.out.println("Attempting to reach google translation service...");
+			late.translateLogs(logs);
+			System.out.println("Translation complete, attempting to update logs...");
+			shell.updateLogs(logs);
+			System.out.println("Update complete!  Press enter to exit.");
+			System.in.read();
+		}catch(Exception e){
+			System.err.println("Error accessing files. Common issues:");
+			System.err.println("- Incorrect/invalid API key.\n- No read/write permission.");
+			//e.printStackTrace();
+		}
+		System.exit(0);
     }
 }
 class GoogleTranslationService{
@@ -26,11 +54,8 @@ class GoogleTranslationService{
         service = new Translator(API_KEY);
     }
     public void translateLogs(ArrayList<LogEntry> logs)throws Exception{
-        System.out.println("Size of array before any operations: " + logs.size());
         String [] array = extractMessages(logs);
-        System.out.println("Size of message array: " + array.length);
         Translation [] after = service.translate(array, "de", "en");
-        System.out.println("Size of array after translation: " + after.length);
         for(int i = 0; i < after.length; i++){
             array[i] = after[i].getTranslatedText();
         }
@@ -46,7 +71,6 @@ class GoogleTranslationService{
     private void appendMessages(ArrayList<LogEntry> logs, String [] messages){
         for(int i = 0; i < logs.size(); i++){
             logs.get(i).setNote(messages[i]);
-            System.out.println(messages[i]);
         }
     }
 }
@@ -61,6 +85,7 @@ class Reader{
             currLine = scan.nextLine();
             String[] words = currLine.split(" ");
             if (words.length <= 0) continue; //Empty line, skip
+
             if (words[0].equals("commit")) {
                 if(curr != null){
                     logs.add(curr);
@@ -68,18 +93,18 @@ class Reader{
                 isNotes = false;
                 curr = new LogEntry(words[1]);
                 continue;
-                }else if(words[0].equals("Author:")){
+            }else if(words[0].equals("Author:")){
                 curr.addAuthor(build(Arrays.copyOfRange(words, 1, words.length-1)));
                 continue;
-                }else if(words[0].equals("Date:")){
+            }else if(words[0].equals("Date:")){
                 curr.addDate(build(Arrays.copyOfRange(words, 1, words.length-1)));
                 continue;
             }else if(words[0].equals("Notes:"))
-            isNotes = true;
+            	isNotes = true;
             if(isNotes)
-            curr.appendNote(currLine);
+            	curr.appendNote(currLine);
             else
-            curr.addLine(currLine);
+            	curr.addLine(currLine);
         }
         return logs;
     }
@@ -95,9 +120,9 @@ class Shell{
     protected static Process executeNonCommand(String cmd, File loc){
         try{
             return Runtime.getRuntime().exec(cmd, null, loc);
-            }catch(Exception e){
+        }catch(Exception e){
             e.printStackTrace();
-            System.exit(1);
+            System.exit(3);
         }
         return null;
     }
@@ -110,14 +135,46 @@ class GitShell extends Shell{
     public GitShell(File targetRepo){
         this.target = targetRepo;
     }
+	private class MyTimerTask extends TimerTask  {
+		public boolean isValid = true;
+
+		public MyTimerTask() {}
+
+		@Override
+	    public void run() {
+			try {
+				String line;
+				Process p = executeNonCommand("git log", target);
+				BufferedReader in = new BufferedReader(
+					new InputStreamReader(p.getErrorStream()));
+
+				while ((line = in.readLine()) != null) {
+					isValid = !line.contains("fatal");
+				} in.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+				isValid = false;
+			}
+	    }
+	}
     public boolean isValidGitRepository(){
-        return true;
-    }
+		MyTimerTask ft = new MyTimerTask();
+		//This is to stop the bufferedreader from looping infinitly
+		(new Timer()).schedule(ft, 200);
+		try{
+			Thread.sleep(300);
+		}catch(InterruptedException e){
+			e.printStackTrace();
+		}
+
+		return ft.isValid;
+
+	}
     public void updateLogs(ArrayList<LogEntry> logs){
         for(LogEntry log : logs){
             try{
                 executeNonCommand(log.getUpdateCommand(), target).waitFor();
-                }catch(InterruptedException ex){
+            }catch(InterruptedException ex){
                 ex.printStackTrace();
             }
         }
@@ -131,9 +188,8 @@ class GitShell extends Shell{
             new InputStreamReader(p.getInputStream()));
             while ((line = in.readLine()) != null) {
                 printer.println(line);
-                //System.out.println(line);
             } in.close(); printer.flush(); printer.close();
-            } catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -158,7 +214,6 @@ class LogEntry {
     public LogEntry(){
         //Empty
         message = "";
-        //        normal = new Normalizer();
     }
     public void addLine(String line){
         if(line == null || line.trim() == "" || line.contains("null"))
@@ -177,8 +232,7 @@ class LogEntry {
         this.author = Normalizer.normalize(author, Normalizer.Form.NFKD);
     }
     public String getUpdateCommand(){
-        System.out.println(String.format("git notes append -m "%s" %s", notes, sha));
-        return String.format("git notes append -m "%s" %s", notes, sha);
+        return String.format("git notes append -m \"%s\" %s", notes, sha);
     }
     public String getMessage(){
         return this.message;

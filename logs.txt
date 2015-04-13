@@ -1,0 +1,1051 @@
+commit dff7f3368db873a505e86d4dee4f6d404c20af63
+Author: Alexander Rutz <ar@animaux.de>
+Date:   Thu Mar 12 14:31:39 2015 +0100
+
+    This works!
+
+Notes:
+    This Works!
+    
+    bei
+    
+    This Works!
+    
+    This Works!
+    
+    This Works!
+    
+    n This Works! nn
+    
+    n This Works! nn
+
+commit e0834b18da11f095383284db6008fe41cc9ce601
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Feb 18 12:23:24 2015 +0100
+
+    head^1 working
+
+Notes:
+    head ^ 1 working
+    
+    head ^ 1 working
+    
+    head ^ 1 working
+    
+    head ^ 1 working
+    
+    head ^ 1 working
+    
+    n ^ 1 head workingnn
+    
+    n ^ 1 head workingnn
+
+commit c75577475c68a7f6d8343c843ebe36889b43fd65
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Fri Jan 9 11:11:38 2015 +0100
+
+    Another commit working!
+
+Notes:
+    Another commit working!
+    
+    Another commit working!
+    
+    Another commit working!
+    
+    n Another commit working! nn
+    
+    n Another commit working! nn
+
+commit e09b366137fc66168a1fb7e22b3dcc116ea3f697
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:31:38 2015 +0100
+
+    E-Mail-Versand
+
+Notes:
+    E-mail
+    
+    E-mail
+    
+    E-mail
+    
+    E-mail
+    
+    n E-mail Versandnn
+    
+    n E-mail Versandnn
+
+commit b9269892e5bcbc77258892522ec939cb762e4ab2
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:30:04 2015 +0100
+
+    Nachtrag
+
+Notes:
+    Supplement
+    
+    Supplement
+    
+    Supplement
+    
+    Supplement
+    
+    Supplement
+    
+    n Nachtragnn
+    
+    n Nachtragnn
+
+commit 397ae4d304481fd70bdb109460f78dbb05a41e23
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:24:40 2015 +0100
+
+    Vereinheitlichungen
+
+Notes:
+    Unifications
+    
+    Unifications
+    
+    n Vereinheitlichungennn
+    
+    n Vereinheitlichungennn
+
+commit c93f6fc32e9161aa3e33c13572c1e0fa7dbf8082
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 17:11:53 2015 +0100
+
+    Weitere Übersetzungen
+
+Notes:
+    More UÌbersetzungen
+    
+    More UÌbersetzungen
+    
+    More UÌbersetzungen
+    
+    More UÌbersetzungen
+    
+    n For more UÌbersetzungennn
+    
+    n For more UÌbersetzungennn
+
+commit 359e4c366709a75859fdd10a4a03de95283945c7
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:30:42 2015 +0100
+
+    Version 2.2.0 Beta 1
+
+Notes:
+    Version 2.2.0 Beta 1
+    
+    Version 2.2.0 Beta 1
+    
+    Version 2.2.0 Beta 1
+    
+    Version 2.2.0 Beta 1
+    
+    n Version 2.2.0 Beta 1nn
+    
+    n Version 2.2.0 Beta 1nn
+
+commit 46e898f74feab4d8db88cb479a0e427fa59309da
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:28:02 2015 +0100
+
+    Fehlerhaftes Datumsformat korrgieren
+    
+    Fixes #6
+
+Notes:
+    Incorrect date format korrgieren Fixes # 6
+    
+    Incorrect date format korrgieren Fixes # 6
+    
+    Incorrect date format korrgieren Fixes # 6
+    
+    Incorrect date format korrgieren Fixes # 6
+    
+    n Incorrect date format korrgierenn Fixes # 6NN
+    
+    n Incorrect date format korrgierenn Fixes # 6NN
+
+commit 81deb789b387d9d60c4f4b84567d2b25c3f9b2db
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:27:17 2015 +0100
+
+    Fehlende Übersetzungen für 2.6
+    
+    Bitte an @animaux zur Durchsicht und Korrektur.
+
+Notes:
+    Missing UÌbersetzungen FUIR 2.6 plea toanimaux for review and correction.
+    
+    Missing UÌbersetzungen FUIR 2.6 plea toanimaux for review and correction.
+    
+    Missing UÌbersetzungen FUIR 2.6 plea toanimaux for review and correction.
+    
+    Missing UÌbersetzungen FUIR 2.6 plea toanimaux for review and correction.
+    
+    Missing UÌbersetzungen FUIR 2.6 plea toanimaux for review and correction.
+    
+    n Lack UÌbersetzungen FUIR 2.6n request toanimaux for review and Korrektur.nn
+    
+    n Lack UÌbersetzungen FUIR 2.6n request toanimaux for review and Korrektur.nn
+
+commit ae3c1e3f4e812b1a4f2aff182618333d0cd0b2a5
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Jan 8 13:03:48 2015 +0100
+
+    Erste Anpassungen für 2.6
+
+Notes:
+    First adjustments FUIR 2.6
+    
+    First adjustments FUIR 2.6
+    
+    First adjustments FUIR 2.6
+    
+    n First adjustments FUIR 2.6nn
+    
+    n First adjustments FUIR 2.6nn
+
+commit b4de82d149bde6e90d6285a7b83f65f2476e87a5
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Jun 16 12:43:02 2014 +0200
+
+    Correct version number format
+
+Notes:
+    Correct version number format
+    
+    Correct version number format
+    
+    Correct version number format
+    
+    n Correct version number formatnn
+    
+    n Correct version number formatnn
+
+commit 1c5b9f40a33016cc2069f1a8da8fe1913a306c83
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Mar 18 11:22:54 2014 +0100
+
+    Version 2.1
+
+Notes:
+    Version 2.1
+    
+    Version 2.1
+    
+    Version 2.1
+    
+    Version 2.1
+    
+    n version 2.1nn
+    
+    n version 2.1nn
+
+commit 1eed84aa17d9718b1a3297550221860c82fc136b
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Apr 3 07:39:37 2013 +0300
+
+    Version 2.0
+
+Notes:
+    Version 2.0
+    
+    Version 2.0
+    
+    Version 2.0
+    
+    Version 2.0
+    
+    Version 2.0
+    
+    n version 2.0nn
+    
+    n version 2.0nn
+
+commit c056049969d96c6f6b9354982c186567237e4a2d
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Apr 3 07:38:28 2013 +0300
+
+    Übersetzungsdatum aktualisieren
+
+Notes:
+    Update Ãœbersetzungsdatum
+    
+    Update Ãœbersetzungsdatum
+    
+    Update Ãœbersetzungsdatum
+    
+    aktualisierennn n Ãœbersetzungsdatum
+    
+    aktualisierennn n Ãœbersetzungsdatum
+
+commit fe081203974eb3d68e93467d83daee7fa185799e
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Wed Apr 3 07:37:53 2013 +0300
+
+    Transliterationen aktualisieren
+    
+    Nummer- und Gradangaben, Und-Verbindungen
+
+Notes:
+    Update transliterations number- and angles, and connections
+    
+    Update transliterations number- and angles, and connections
+    
+    Update transliterations number- and angles, and connections
+    
+    n transliterations aktualisierenn number- and angles, AND Verbindungennn
+    
+    n transliterations aktualisierenn number- and angles, AND Verbindungennn
+
+commit 667a188da09d21e1c5e8b935a2bdf6d66260cb09
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Tue May 29 16:58:39 2012 +0300
+
+    Datenquellenpaginierung
+
+Notes:
+    Datenquellenpaginierung
+    
+    Datenquellenpaginierung
+    
+    Datenquellenpaginierung
+    
+    n Datenquellenpaginierungnn
+    
+    n Datenquellenpaginierungnn
+
+commit 21a0b6d13bea17dc42e8e0406f5f0ceb139e1f31
+Merge: 0e1c538 151daf2
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Fri May 25 08:03:05 2012 -0700
+
+    Merge pull request #3 from froschdesign/master
+    
+    Weitere Fehlerkorrekturen
+
+Notes:
+    Merge: Merge pull request # 0e1c538 151daf2 3 from frog design / master Other bug fixes
+    
+    Merge: Merge pull request # 0e1c538 151daf2 3 from frog design / master Other bug fixes
+    
+    Merge: Merge pull request # 0e1c538 151daf2 3 from frog design / master Other bug fixes
+    
+    Merge: Merge pull request # 0e1c538 151daf2nn 3 from frog design / mastering More Fehlerkorrekturennn
+    
+    Merge: Merge pull request # 0e1c538 151daf2nn 3 from frog design / mastering More Fehlerkorrekturennn
+
+commit 151daf20291093497a37f57034a3ad07cc8b4514
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Fri May 25 16:32:03 2012 +0200
+
+    Weitere Korrekturen
+
+Notes:
+    Further corrections
+    
+    Further corrections
+    
+    Further corrections
+    
+    Further corrections
+    
+    n For more Korrekturennn
+    
+    n For more Korrekturennn
+
+commit dafd256d3ed5934c22158d71d82c2a2a370db5c4
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Fri May 25 16:10:11 2012 +0200
+
+    Fehlenden Buchstaben ergänzt
+    
+    das „T“ in Pflichtfeld
+
+Notes:
+    Missing letters ergÃ¤nzt the â € œ € ZTA required field
+    
+    Missing letters ergÃ¤nzt the â € œ € ZTA required field
+    
+    Missing letters ergÃ¤nzt the â € œ € ZTA required field
+    
+    Missing letters ergÃ¤nzt the â € œ € ZTA required field
+    
+    n missing letters ergÃ¤nztn the â € œ € ZTA Pflichtfeldnn
+    
+    n missing letters ergÃ¤nztn the â € œ € ZTA Pflichtfeldnn
+
+commit c12a4602de3f885627c1348a1e7e596614c11740
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Fri May 25 16:07:15 2012 +0200
+
+    Fehlerkorrektur
+    
+    - Rechtschreibung (fehlende Buchstaben, Buchstabendreher)
+    - Formulierungen (Vereinfachungen)
+
+Notes:
+    Error Correction - Spelling (missing letters, letters Dreher) - formulations (simplified)
+    
+    Error Correction - Spelling (missing letters, letters Dreher) - formulations (simplified)
+    
+    Error Correction - Spelling (missing letters, letters Dreher) - formulations (simplified)
+    
+    n error CorrectionN - Spelling (missing letters, letters Dreher) n - formulations (simplified) nn
+    
+    n error CorrectionN - Spelling (missing letters, letters Dreher) n - formulations (simplified) nn
+
+commit 0e1c53836d9ca0da4a30d83d94979522d1d55a14
+Merge: f43aa29 0766fbe
+Author: Nils Hörrmann <github@nilshoerrmann.de>
+Date:   Thu May 24 01:18:20 2012 -0700
+
+    Merge pull request #2 from froschdesign/master
+    
+    Einige Korrekturen
+
+Notes:
+    Merge: Merge pull request # f43aa29 0766fbe 2 from frog design / mastercard Some corrections
+    
+    Merge: Merge pull request # f43aa29 0766fbe 2 from frog design / mastercard Some corrections
+    
+    Merge: Merge pull request # f43aa29 0766fbe 2 from frog design / mastercard Some corrections
+    
+    Merge: Merge pull request # f43aa29 0766fbenn 2 from frog design / mastering Some Korrekturennn
+    
+    Merge: Merge pull request # f43aa29 0766fbenn 2 from frog design / mastering Some Korrekturennn
+
+commit 0766fbef739f6fdda12fa485919f42f632a24968
+Author: froschdesign <info@froschdesignstudio.de>
+Date:   Thu May 24 09:49:19 2012 +0200
+
+    Einige Korrekturen
+    
+    - Rechtschreibung und Formulierungen angepasst
+    - Übersetzungsfehler behoben
+
+Notes:
+    Some corrections - Spelling and formulations adapted - fixed translation errors
+    
+    Some corrections - Spelling and formulations adapted - fixed translation errors
+    
+    Some corrections - Spelling and formulations adapted - fixed translation errors
+    
+    Some corrections - Spelling and formulations adapted - fixed translation errors
+    
+    n Some Korrekturenn - Spelling and formulations angepasstn - translation errors behobennn
+    
+    n Some Korrekturenn - Spelling and formulations angepasstn - translation errors behobennn
+
+commit f43aa29cd2da205936c23faaef958d6839d9cc39
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Fri May 18 20:46:31 2012 +0200
+
+    German translation 2.0 beta 2
+
+Notes:
+    German translation 2.0 beta 2
+    
+    German translation 2.0 beta 2
+    
+    German translation 2.0 beta 2
+    
+    German translation 2.0 beta 2
+    
+    n German translation 2.0 beta 2nn
+    
+    n German translation 2.0 beta 2nn
+
+commit e1c455b47c7fdb70d6c6972ee5102493040d1364
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Fri May 18 19:20:48 2012 +0200
+
+    Weitere Übersetzungen
+
+Notes:
+    Other Translations
+    
+    Other Translations
+    
+    Other Translations
+    
+    n For more Ãœbersetzungennn
+    
+    n For more Ãœbersetzungennn
+
+commit 0b3d5aa2da71d1c0fd5906ce785f00d4dee733a6
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sat May 12 08:52:04 2012 +0200
+
+    Reexport
+
+Notes:
+    Reexport
+    
+    Reexport
+    
+    Reexport
+    
+    Reexport
+    
+    n Reexportnn
+    
+    n Reexportnn
+
+commit ff60aaa5f701857fea4317bcb34a55706925e771
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 14:17:53 2012 +0200
+
+    Updated release notes
+
+Notes:
+    Updated release notes
+    
+    Updated release notes
+    
+    Updated release notes
+    
+    Updated release notes
+    
+    Updated release notes
+    
+    n Updated release notesnn
+    
+    n Updated release notesnn
+
+commit 98479e817b263ef8403f8cb4d5728de267b02ac6
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 14:16:14 2012 +0200
+
+    Correct repo name
+
+Notes:
+    Correct repo name
+    
+    Correct repo name
+    
+    Correct repo name
+    
+    n Correct repo namenn
+    
+    n Correct repo namenn
+
+commit 466fc4225eaa79722d09cd9b49920fc6300779f5
+Merge: 6b4c5b8 086f0f0
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 13:43:14 2012 +0200
+
+    Merge branch 'refs/heads/2.3'
+
+Notes:
+    Merge: Merge branch 6b4c5b8 086f0f0 'refs / heads / 2.3'
+    
+    Merge: Merge branch 6b4c5b8 086f0f0 'refs / heads / 2.3'
+    
+    Merge: Merge branch 6b4c5b8 086f0f0nn 'refs / heads / 2.3'nn
+    
+    Merge: Merge branch 6b4c5b8 086f0f0nn 'refs / heads / 2.3'nn
+
+commit 086f0f007a416109e8a8171cbaef9fa99bc984e7
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu May 10 13:43:01 2012 +0200
+
+    Language: German 2.0 Beta
+
+Notes:
+    Language: German 2.0 Beta
+    
+    Language: German 2.0 Beta
+    
+    Language: German 2.0 Beta
+    
+    n Language: German 2.0 Betann
+    
+    n Language: German 2.0 Betann
+
+commit 6b4c5b881f60bb50033e484f0a91bbf060ba22a9
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Apr 9 08:35:10 2012 +0200
+
+    Revert "Aktualisierung für Symphony 2.3 mit Ergänzungen von @jensscherbl"
+    
+    This reverts commit 9077f2d44436a8d2531c1bc741056d5662e63150.
+
+commit 9077f2d44436a8d2531c1bc741056d5662e63150
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Apr 9 08:32:41 2012 +0200
+
+    Aktualisierung für Symphony 2.3 mit Ergänzungen von @jensscherbl
+
+Notes:
+    Update fÃ1/4r Symphony 2.3 with Additions ofjensscherbl
+    
+    Update fÃ1/4r Symphony 2.3 with Additions ofjensscherbl
+    
+    Update fÃ1/4r Symphony 2.3 with Additions ofjensscherbl
+    
+    n update fÃ1/4r Symphony 2.3 with Additions ofjensscherblnn
+    
+    n update fÃ1/4r Symphony 2.3 with Additions ofjensscherblnn
+
+commit 2b700f162fde5b77508c4f2c554391e52783e7f7
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Dec 13 16:34:29 2011 +0100
+
+    Version 1.3.1
+
+Notes:
+    Version 1.3.1
+    
+    Version 1.3.1
+    
+    Version 1.3.1
+    
+    n version 1.3.1nn
+    
+    n version 1.3.1nn
+
+commit d5aa8199e05ccf99adfdcd7fc70f868d7c28bc4c
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Mar 27 13:11:53 2011 +0200
+
+    Neue Übersetzungen (insbesondere für relative Zeitangaben)
+
+Notes:
+    New translations (especially for relative times)
+    
+    New translations (especially fÃ1/4r relative times)
+    
+    New translations (especially fÃ1/4r relative times)
+    
+    New translations (especially fÃ1/4r relative times)
+    
+    n New translations (especially fÃ1/4r relative times) nn
+    
+    n New translations (especially fÃ1/4r relative times) nn
+
+commit 32150070d924e4c212ae1371ab5c1d1343238382
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Mar 27 10:57:06 2011 +0200
+
+    Version 1.3, Ergänzung fehlender Datums- und Zeitangaben
+
+Notes:
+    Version 1.3, ErgÃ¤nzung lack of dates and times
+    
+    Version 1.3, ErgÃ¤nzung lack of dates and times
+    
+    Version 1.3, ErgÃ¤nzung lack of dates and times
+    
+    Version 1.3, ErgÃ¤nzung lack of dates and times
+    
+    Version 1.3, ErgÃ¤nzung lack of dates and times
+    
+    n Version 1.3, ErgÃ¤nzung missing date and Zeitangabennn
+    
+    n Version 1.3, ErgÃ¤nzung missing date and Zeitangabennn
+
+commit 9053d4e07e3429886b53c7b47ce74e883b255214
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Wed Feb 16 10:37:17 2011 +0100
+
+    Version 1.2
+
+Notes:
+    Version 1.2
+    
+    Version 1.2
+    
+    Version 1.2
+    
+    Version 1.2
+    
+    Version 1.2
+    
+    n version 1.2nn
+    
+    n version 1.2nn
+
+commit 66ea96f3b9b7a6abf707b71cea23b8e4bbc5cd40
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Wed Feb 16 10:35:14 2011 +0100
+
+    Lokalisierung von Datums- und Zeitangaben
+
+Notes:
+    Localization of dates and times
+    
+    Localization of dates and times
+    
+    Localization of dates and times
+    
+    Localization of dates and times
+    
+    n localization of date and Zeitangabennn
+    
+    n localization of date and Zeitangabennn
+
+commit c1c10697642048062eb6943aee6243816b21b6d4
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 15 20:22:33 2011 +0100
+
+    Fehlende Übersetzungen ergänzt - dies muss alles noch mal Korrektur gelesen werden
+
+Notes:
+    Missing translations ergÃ¤nzt - this must be read all over again correction
+    
+    Missing translations ergÃ¤nzt - this must be read all over again correction
+    
+    Missing translations ergÃ¤nzt - this must be read all over again correction
+    
+    werdennn this must read everything again correction - n Missing translations ergÃ¤nzt
+    
+    werdennn this must read everything again correction - n Missing translations ergÃ¤nzt
+
+commit 2060c2019bc454b8a5b9505f43d06d31f0184df1
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 1 19:40:36 2011 +0100
+
+    Zwischenstand
+
+Notes:
+    The score
+    
+    The score
+    
+    The score
+    
+    n Zwischenstandnn
+    
+    n Zwischenstandnn
+
+commit 81374cffc9b630208845956fcffe65867d3d17a6
+Author: Johanna Hörrmann <johannadietrich@johannas-imac.(none)>
+Date:   Mon Jun 21 18:23:09 2010 +0800
+
+    Changed wrong link
+
+Notes:
+    Changed wrong link
+    
+    Changed wrong link
+    
+    Changed wrong link
+    
+    n Changed wrong linknn
+    
+    n Changed wrong linknn
+
+commit da284ccd78ef9440f10fbb68b2b3d617118c00ff
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:16:26 2010 +0200
+
+    Jetze aber! Manno!
+
+Notes:
+    Jetze though! Manno!
+    
+    Jetze though! Manno!
+    
+    Jetze though! Manno!
+    
+    n Jetze though! Manno! Nn
+    
+    n Jetze though! Manno! Nn
+
+commit 9b3c8e48ecd2c276eb45ba8dc9fd77b6c3436044
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:13:16 2010 +0200
+
+    richitg shcreibne
+
+Notes:
+    RICHITGE shcreibne
+    
+    RICHITGE shcreibne
+    
+    RICHITGE shcreibne
+    
+    RICHITGE shcreibne
+    
+    RICHITGE shcreibne
+    
+    n RICHITGE shcreibnenn
+    
+    n RICHITGE shcreibnenn
+
+commit 2de96326b364665000d0b04c7a358633e4b1f9cb
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:11:34 2010 +0200
+
+    Kommas, keine Semikolons
+
+Notes:
+    Commas, semicolons
+    
+    Commas, semicolons
+    
+    Commas, semicolons
+    
+    Commas, semicolons
+    
+    n commas, no Semikolonsnn
+    
+    n commas, no Semikolonsnn
+
+commit ba3dffbad1da7e8874c614fac2f8980b990ed009
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:10:02 2010 +0200
+
+    Fehlende Übersetzungen für systemunabhängige Datenquellen
+
+Notes:
+    Missing translations fÃ1/4r systemunabhÃ¤ngige data sources
+    
+    Missing translations fÃ1/4r systemunabhÃ¤ngige data sources
+    
+    Missing translations fÃ1/4r systemunabhÃ¤ngige data sources
+    
+    n Lack translations fÃ1/4r systemunabhÃ¤ngige Datenquellennn
+    
+    n Lack translations fÃ1/4r systemunabhÃ¤ngige Datenquellennn
+
+commit dc102528fd617669f5275c99f7476e7cdcf3010e
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Sun Apr 18 19:06:52 2010 +0200
+
+    Fehlende Übersetzung ergänzt
+
+Notes:
+    ErgÃ¤nzt missing Übersetzung
+    
+    ErgÃ¤nzt missing Übersetzung
+    
+    ErgÃ¤nzt missing Übersetzung
+    
+    ErgÃ¤nzt missing Übersetzung
+    
+    ErgÃ¤nzt missing Übersetzung
+    
+    n Lack gearing up ergÃ¤nztnn
+    
+    n Lack gearing up ergÃ¤nztnn
+
+commit 7d817b16bccb47b58801e3107480186cb0cfa26f
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 15 12:44:24 2010 +0100
+
+    falsch gesetztes Leerzeichen
+
+Notes:
+    incorrectly set spaces
+    
+    incorrectly set spaces
+    
+    incorrectly set spaces
+    
+    incorrectly set spaces
+    
+    n in wrong Leerzeichennn
+    
+    n in wrong Leerzeichennn
+
+commit 00d33252f2b9a0352ed2c930059a1a1716a919c2
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 9 17:53:18 2010 +0100
+
+    Aktualisierung der Sprachdatei und Ergänzung fehlender Übersetzungen
+
+Notes:
+    Update the language file and ErgÃ¤nzung missing translations
+    
+    Update the language file and ErgÃ¤nzung missing translations
+    
+    Update the language file and ErgÃ¤nzung missing translations
+    
+    Update the language file and ErgÃ¤nzung missing translations
+    
+    Update the language file and ErgÃ¤nzung missing translations
+    
+    n Update the language file and ErgÃ¤nzung missing Ãœbersetzungennn
+    
+    n Update the language file and ErgÃ¤nzung missing Ãœbersetzungennn
+
+commit c07c80fb9130c63046eebf5f74029a328c665a73
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 2 07:54:22 2010 +0100
+
+    Update readme to reflect changes
+
+Notes:
+    Update readme to reflect changes
+    
+    Update readme to reflect changes
+    
+    Update readme to reflect changes
+    
+    Update readme to reflect changes
+    
+    n Update readme to reflect changesnn
+    
+    n Update readme to reflect changesnn
+
+commit fdffb2d16a4a6a6f0e6f40e3771d5a1115b6edf1
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 2 07:06:28 2010 +0100
+
+    Rename entire repository as suggested by the Symphony team
+
+Notes:
+    Rename Entire repository as Suggested by the Symphony team
+    
+    Rename Entire repository as Suggested by the Symphony team
+    
+    Rename Entire repository as Suggested by the Symphony team
+    
+    Rename Entire repository as Suggested by the Symphony team
+    
+    n Rename Entire repository as Suggested by the Symphony teamnn
+    
+    n Rename Entire repository as Suggested by the Symphony teamnn
+
+commit 6bb5f109a0b814a61d8e1e7c2e8579dc025e55d0
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Tue Feb 2 07:00:31 2010 +0100
+
+    Use correct class name
+
+Notes:
+    Use correct classname
+    
+    Use correct classname
+    
+    Use correct classname
+    
+    n Use correct class namenn
+    
+    n Use correct class namenn
+
+commit 7704f1becccea8877adf8426c70d13934980d751
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:25:52 2010 +0100
+
+    add licence file
+
+Notes:
+    add license file
+    
+    add license file
+    
+    add license file
+    
+    n add license filenn
+    
+    n add license filenn
+
+commit eb83cf6d62e06b3ea832f850fc15402995894199
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:24:17 2010 +0100
+
+    Add changes and corrections by kaiuwe
+
+Notes:
+    Add changes and corrections by KaiUwe
+    
+    Add changes and corrections by KaiUwe
+    
+    Add changes and corrections by KaiUwe
+    
+    Add changes and corrections by KaiUwe
+    
+    n Add changes and corrections by kaiuwenn
+    
+    n Add changes and corrections by kaiuwenn
+
+commit 8e27cf1b4720155dcda7791e93e706b271f8f4c3
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:23:38 2010 +0100
+
+    small typo
+
+Notes:
+    small typo
+    
+    small typo
+    
+    small typo
+    
+    small typo
+    
+    n small typonn
+    
+    n small typonn
+
+commit 2bb80c509078897fd4b583c88ebb717de25f6594
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:20:51 2010 +0100
+
+    remove unneeded files
+
+Notes:
+    remove unneeded files
+    
+    remove unneeded files
+    
+    remove unneeded files
+    
+    n remove unneeded filesnn
+    
+    n remove unneeded filesnn
+
+commit c28febaf230e4d54929cee7e4ff3f1d65abb8b39
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Mon Feb 1 15:15:22 2010 +0100
+
+    Structural changes to match Symphony 2.0.7 requirements
+
+Notes:
+    Structural changes to match Symphony 2.0.7 requirements
+    
+    Structural changes to match Symphony 2.0.7 requirements
+    
+    Structural changes to match Symphony 2.0.7 requirements
+    
+    Structural changes to match Symphony 2.0.7 requirements
+    
+    n Structural changes to match Symphony 2.0.7 requirementsnn
+    
+    n Structural changes to match Symphony 2.0.7 requirementsnn
+
+commit b2470462ae93912b72baf1e894ab655f43958d2c
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Dec 10 17:19:52 2009 +0100
+
+    readme formatting
+
+Notes:
+    readme formatting
+    
+    readme formatting
+    
+    readme formatting
+    
+    readme formatting
+    
+    readme formatting
+    
+    n readme formattingnn
+    
+    n readme formattingnn
+
+commit 8bc37c96c6262a9dc4723502710a7b41e3b2faf0
+Author: Nils Hörrmann <post@nilshoerrmann.de>
+Date:   Thu Dec 10 17:18:17 2009 +0100
+
+    Initial import
