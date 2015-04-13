@@ -1,7 +1,0 @@
-HelloWorld1
-LICENCE
-README.markdown
-dump.txt
-extension.driver.php
-extension.meta.xml
-lang

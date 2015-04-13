@@ -1,9 +1,10 @@
 import java.io.*;
 import java.util.*;
-import com.gtranslate.text.*;
-import com.gtranslate.parsing.*;
-import com.gtranslate.Translator;
-import com.gtranslate.Language;
+import java.text.Normalizer;
+import org.google.translate.api.v2.core.model.Detection;
+import org.google.translate.api.v2.core.model.Language;
+import org.google.translate.api.v2.core.model.Translation;
+import org.google.translate.api.v2.core.Translator;
 
 public class EntryPoint {
 	public static void main(String[] args) throws Exception {
@@ -11,28 +12,51 @@ public class EntryPoint {
 		File logFile = new File("logs.txt");
 		shell.generateLogs(logFile);
     ArrayList<LogEntry> logs = Reader.getLogsFromFile(logFile);
-		Stuff late = new Stuff();
+		GoogleTranslationService late = new GoogleTranslationService();
 		late.translateLogs(logs);
-    //for(LogEntry e : logs){
-    //  System.out.println(e);
-    //}
+    for(LogEntry e : logs){
+      System.out.println(e);
+    }
+		shell.updateLogs(logs);
 
 
 	}
 
 }
 
-class Stuff{
+class GoogleTranslationService{
 
-	public Stuff(){
+	final static String API_KEY = "PUT_YOUR_API_KEY_HERE";
+	private Translator service;
 
+	public GoogleTranslationService(){
+		service = new Translator(API_KEY);
 	}
-		public void translateLogs(ArrayList<LogEntry> allLogs){
-			Translator translate = Translator.getInstance();
-			String text = translate.translate("Hello!", Language.ENGLISH, Language.ROMANIAN);
-			System.out.println(text); // "Bună ziua!"
+	public void translateLogs(ArrayList<LogEntry> logs)throws Exception{
+		System.out.println("Size of array before any operations: " + logs.size());
+		String [] array = extractMessages(logs);
+		System.out.println("Size of message array: " + array.length);
+		Translation [] after = service.translate(array, "de", "en");
+		System.out.println("Size of array after translation: " + after.length);
+		for(int i = 0; i < after.length; i++){
+			array[i] = after[i].getTranslatedText();
 		}
+		appendMessages(logs, array);
+	}
+	private String [] extractMessages(ArrayList<LogEntry>logs){
+		String [] arr = new String[logs.size()];
+		for(int i = 0; i < logs.size();i++){
+			arr[i] = logs.get(i).getMessage();
+		}
+		return arr;
+	}
 
+	private void appendMessages(ArrayList<LogEntry> logs, String [] messages){
+		for(int i = 0; i < logs.size(); i++){
+			logs.get(i).setNote(messages[i]);
+			System.out.println(messages[i]);
+		}
+	}
 
 }
 
@@ -43,7 +67,7 @@ class Reader{
 		String currLine;
 		ArrayList <LogEntry> logs = new ArrayList<>();
 		LogEntry curr = null;
-
+		boolean isNotes = false;
 		while (scan.hasNextLine()) {
 			currLine = scan.nextLine();
 			String[] words = currLine.split(" ");
@@ -53,12 +77,20 @@ class Reader{
 				if(curr != null){
 						logs.add(curr);
 				}
+				isNotes = false;
 				curr = new LogEntry(words[1]);
+				continue;
 			}else if(words[0].equals("Author:")){
 				curr.addAuthor(build(Arrays.copyOfRange(words, 1, words.length-1)));
+				continue;
 			}else if(words[0].equals("Date:")){
 				curr.addDate(build(Arrays.copyOfRange(words, 1, words.length-1)));
-			}else
+				continue;
+			}else if(words[0].equals("Notes:"))
+				isNotes = true;
+			if(isNotes)
+					curr.appendNote(currLine);
+			else
 				curr.addLine(currLine);
 
 
@@ -75,14 +107,9 @@ class Reader{
 	}
 }
 
-class GitShell{
-	private File target;
 
-	public GitShell(File targetRepo){
-		this.target = targetRepo;
-	}
-
-	private static Process executeNonCommand(String cmd, File loc){
+class Shell{
+	protected static Process executeNonCommand(String cmd, File loc){
 		try{
 			return Runtime.getRuntime().exec(cmd, null, loc);
 		}catch(Exception e){
@@ -92,7 +119,34 @@ class GitShell{
 		return null;
 
 	}
-	//new File("C:\\Users\\Colin\\Documents\\Github\\lang_german")
+	protected static Process executeNonCommand(String cmd){
+		return executeNonCommand(cmd, null);
+	}
+
+
+}
+class GitShell extends Shell{
+	private File target;
+
+	public GitShell(File targetRepo){
+		this.target = targetRepo;
+	}
+
+	public boolean isValidGitRepository(){
+		return true;
+	}
+
+	public void updateLogs(ArrayList<LogEntry> logs){
+		for(LogEntry log : logs){
+			try{
+				executeNonCommand(log.getUpdateCommand(), target).waitFor();
+			}catch(InterruptedException ex){
+				ex.printStackTrace();
+			}
+
+		}
+	}
+
 
 	public void generateLogs(File out){
 		try {
@@ -120,6 +174,8 @@ class LogEntry {
   private String message;
   private String notes;
 
+//	private static Normalizer normal;
+
 	public LogEntry(String sha, String author, String date) {
     this();
 		this.sha = sha;
@@ -135,26 +191,51 @@ class LogEntry {
   public LogEntry(){
     //Empty
     message = "";
+//		normal = new Normalizer();
   }
 
 
   public void addLine(String line){
     if(line == null || line.trim() == "" || line.contains("null"))
-      return;
-    message += line + "\n";
+					return;
+				message += Normalizer.normalize(line, Normalizer.Form.NFKD) + "\n";
   }
+	public void appendNote(String line){
+		if(line == null || line.trim() == "" || line.contains("null"))
+			return;
+		notes += Normalizer.normalize(line, Normalizer.Form.NFKD) + "\n";
+	}
 
   public void addDate(String date){
-    this.date = date;
+
+    this.date = Normalizer.normalize(date, Normalizer.Form.NFKD);
   }
 
   public void addAuthor(String author){
-    this.author = author;
+
+    this.author = Normalizer.normalize(author, Normalizer.Form.NFKD);
   }
+
+	public String getUpdateCommand(){
+		System.out.println(String.format("git notes append -m \"%s\" %s", notes, sha));
+		return String.format("git notes append -m \"%s\" %s", notes, sha);
+	}
+
+	public String getMessage(){
+		return this.message;
+	}
+
+	public void setNote(String note){
+		this.notes = note;
+	}
+
+	public String getNote(){
+		return this.notes;
+	}
 
   @Override
   public String toString() {
-      return String.format("Author: %s\nDate: %s\nMessage:\n%s\n", this.author,this.date,this.message);
+      return String.format("SHA:%s\nAuthor: %s\nDate: %s\nMessage:\n%s\nNotes:\n%s\n", this.sha, this.author,this.date,this.message, this.notes);
   }
 
 
