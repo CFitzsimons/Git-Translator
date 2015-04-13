@@ -7,7 +7,7 @@ About the project
 As a large proportion of open source projects are maintained by English there is a large barrier to contribution for foreign developers.  For example, a French developer working on an open source project may not be able to understand all the technical language being used during commits.  In order to help alleviate this, the tool here allows a developer to translate all the logs in a git project, storing all the translations in a note on the log.  This change only effects the local logs and therefore the remote project will not be damaged by rewriting commit messages using something like rebase.  
 An example commit message taken from a clone of https://github.com/hananils/lang_german
 
-![Translated git log])(http://i.snag.gy/bYYee.jpg)
+![Translated git log](http://i.snag.gy/bYYee.jpg)
 
 As you see from above, the commit message (which was in German originally) was translated to English and stored in a note.  This will be done for every commit message in the history, helping developers better understand any changes in their native language.
 
