@@ -106,6 +106,7 @@ class Reader{
             else
             	curr.addLine(currLine);
         }
+        logs.add(curr);
         return logs;
     }
     private static String build(String [] array){
@@ -136,27 +137,27 @@ class GitShell extends Shell{
         this.target = targetRepo;
     }
 	private class BooleanTimer extends TimerTask  {
-		public boolean isValid = true;
+        public boolean isValid = true;
 
-		public BooleanTimer() {}
+        public BooleanTimer() {}
 
-		@Override
-	    public void run() {
-			try {
-				String line;
-				Process p = executeNonCommand("git log", target);
-				BufferedReader in = new BufferedReader(
-					new InputStreamReader(p.getErrorStream()));
+        @Override
+        public void run() {
+            try {
+                String line;
+                Process p = executeNonCommand("git log", target);
+                BufferedReader in = new BufferedReader(
+                    new InputStreamReader(p.getErrorStream()));
 
-				while ((line = in.readLine()) != null) {
-					isValid = !line.contains("fatal");
-				} in.close();
-			} catch (Exception e) {
-				e.printStackTrace();
-				isValid = false;
-			}
-	    }
-	}
+                while ((line = in.readLine()) != null) {
+                    isValid = !line.contains("fatal");
+                } in.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+                isValid = false;
+            }
+        }
+    }
     public boolean isValidGitRepository(){
 		BooleanTimer ft = new BooleanTimer();
 		//This is to stop the bufferedreader from looping infinitly
@@ -174,7 +175,7 @@ class GitShell extends Shell{
         for(LogEntry log : logs){
             try{
                 executeNonCommand(log.getUpdateCommand(), target).waitFor();
-            }catch(InterruptedException ex){
+            }catch(Exception ex){
                 ex.printStackTrace();
             }
         }
@@ -218,21 +219,21 @@ class LogEntry {
     public void addLine(String line){
         if(line == null || line.trim() == "" || line.contains("null"))
         return;
-        message += Normalizer.normalize(line, Normalizer.Form.NFKD) + "n";
+        message += Normalizer.normalize(line, Normalizer.Form.NFD) + "\n";
     }
     public void appendNote(String line){
         if(line == null || line.trim() == "" || line.contains("null"))
         return;
-        notes += Normalizer.normalize(line, Normalizer.Form.NFKD) + "n";
+        notes += Normalizer.normalize(line, Normalizer.Form.NFD) + "\n";
     }
     public void addDate(String date){
-        this.date = Normalizer.normalize(date, Normalizer.Form.NFKD);
+        this.date = Normalizer.normalize(date, Normalizer.Form.NFD);
     }
     public void addAuthor(String author){
-        this.author = Normalizer.normalize(author, Normalizer.Form.NFKD);
+        this.author = Normalizer.normalize(author, Normalizer.Form.NFD);
     }
     public String getUpdateCommand(){
-        return String.format("git notes append -m \"%s\" %s", notes, sha);
+        return String.format("git notes append -m \"%s\" %s", notes.replaceAll("\"", "\'"), sha);
     }
     public String getMessage(){
         return this.message;
@@ -245,6 +246,7 @@ class LogEntry {
     }
     @Override
     public String toString() {
-        return String.format("SHA:%snAuthor: %snDate: %snMessage:n%snNotes:n%sn", this.sha, this.author,this.date,this.message, this.notes);
+        return String.format("SHA:%s\nAuthor: %s\nDate: %s\nMessage:\n%snNotes:\n%s\n",
+            this.sha, this.author,this.date,this.message, this.notes);
     }
 }
